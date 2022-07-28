@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Desafio_Keyrus</title>
+</head>
+<body>
+    <div>
+        <h1 class="titulo">
+            Cadastrar novo Log
+        </h1>
+    </div>
+
+    <form action="http://localhost:8080/log" method="post">
+        <fieldset class="campo">
+
+            <div>
+                <label> <strong>Data</strong></label> 
+                <input type="text" name="data=" id="data", required>
+            </div>
+
+            <div>
+                <label><strong>IP</strong></label>
+                <input type="text" name="ip" id="ip", required>
+            </div>
+
+            <div>
+                <label><strong>Request</strong></label>
+                <input type="text" name="request" id="request", required>
+            </div>
+
+            <div>
+                <label><strong>Status</strong></label>
+                <input type="int" name="status" id="status", required>
+            </div>
+
+            <div>
+                <label><strong>User Agent</strong></label>
+                <input type="text" name="userAgent" id="userAgent", required>
+            </div>
+
+            <button type="reset" class="botao" id="resetar_valores"> <strong>Resetar valores</strong></button>
+            <button type="submit" class="botao"><strong>Enviar</strong></button>        
+        </fieldset>
+    </form>
+
+    <div id="get">
+        <h1 class="titulo">Busca de registros</h1>
+        <form action="http://localhost:8080/log">
+            <button class="botao" id="todos_registros"><strong>Visualizar todos os registros</strong></button>
+        </form>
+
+        <br>
+
+        <h3 class="titulo">Busca por Id</h3>
+
+        <form action="http://localhost:8080/log/id" method="get" class="campo">
+            <input type="int" name="id">
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+
+        <form action="http://localhost:8080/log/ip" method="get" class="campo">
+            <h3 class="titulo">Busca por Endereço Ip que contenha:</h3>
+            <input type="text" name="ip">
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+
+        <form action="http://localhost:8080/log/userAgent" method="get" class="campo">
+            <h3 class="titulo">Busca por User Agent que contenha:</h3>
+            <input type="text" name="userAgent">
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+    </div>
+
+    <div id="put">
+        <h1 class="titulo">Alterar Registros (Não funcional)</h1>
+        <form action="http://localhost:8080/log" method="put" class="campo">
+            <fieldset>
+                <br>
+                <h3 class="titulo">Digite o Id do registro a ser alterado</h3>
+                <br>
+                <div>
+                    <input type="text" name="id" id="id", required>
+                </div>
+                <br>
+                <h3 class="titulo">Agora, digite a atualização para os campos</h3>
+                <br>
+                <div>
+                    <label> <strong>Data</strong></label> 
+                    <input type="text" name="data=" id="data", required>
+                </div>
+    
+                <div>
+                    <label><strong>IP</strong></label>
+                    <input type="text" name="ip" id="ip", required>
+                </div>
+    
+                <div>
+                    <label><strong>Request</strong></label>
+                    <input type="text" name="request" id="request", required>
+                </div>
+    
+                <div>
+                    <label><strong>Status</strong></label>
+                    <input type="int" name="status" id="status", required>
+                </div>
+    
+                <div>
+                    <label><strong>User Agent</strong></label>
+                    <input type="text" name="userAgent" id="userAgent", required>
+                </div>
+    
+                <button type="reset" class="botao" id="resetar_valores"> <strong>Resetar valores</strong></button>
+                <button type="submit" class="botao"><strong>Enviar</strong></button>        
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="delete">
+        <h1 class="titulo">Deletar registros (Não funcional)</h1>
+        <br>
+        <h3>Digite o Id do item a ser deletado</h3>
+        <form action="http://localhost:8080/log/id" method="delete" class="campo">
+            <input type="int" name="id">
+            <button type="submit" class="botao">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

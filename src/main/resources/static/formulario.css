@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    font-family: sans-serif;
+    margin-left: 7%;
+    color: darkslategrey;
+}
+
+fieldset{
+    border: 0;
+}
+
+body{
+    margin-left: 37%;
+    font-size: 1em;
+    background-color: rgb(228, 228, 228);
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.campo{
+    margin-bottom: 0.3em;
+}
+
+.campo label{
+    margin-bottom: 0.2em;
+    display: block;
+    margin-left: 13em;
+}
+
+.campo input[type="text"], .campo input[type="int"], .campo input[type="date"]{
+    padding: 0.3em;
+    border: 1px solid;
+    margin-right: 0%;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2);
+    margin-left: 11em;
+}
+
+.campo input:focus, .campo textarea:focus{
+    background-color: rgb(246, 243, 229);
+}
+
+.botao{
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    margin-right: 0.3em;
+    margin-inline-start: 5em;
+    border-radius: 7px;
+    padding: 0.3em;
+    
+}
+
+.botao:hover{
+    background-color: rgb(255, 255, 255);
+    padding: 0.45em;
+}
+
+#get{
+    margin-top: 3%;
+}
+
+#put{
+    margin-top: 3%;    
+}
+
+#todos_registros{
+    margin-inline-start: 10em;
+}
+
+#resetar_valores{
+    margin-left: 9em;
+}
