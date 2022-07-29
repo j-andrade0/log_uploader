@@ -30,12 +30,6 @@ public class FileUploadController {
 	@Autowired
 	LogRepository logRepository;
 	
-	@PostMapping("/justUpload")
-	public String uploadFile(@RequestParam("file") MultipartFile file) throws IllegalStateException, IOException {
-		fileUploadService.uploadFile(file);
-		return file.getOriginalFilename() + " upload!";
-	}
-	
 	@PostMapping
 	public String uploadData(@RequestParam("file") MultipartFile file) throws IOException {
 		List<Log> logList = new ArrayList<>();
