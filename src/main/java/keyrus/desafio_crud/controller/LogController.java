@@ -30,12 +30,12 @@ public class LogController {
 		return log;
 	}
 
-	@PutMapping
-	public @ResponseBody Log updateLog(@Valid Log existingLog) {
-		Log teste = logRepository.findById(existingLog.getId()).get();
+	// @PutMapping
+	// public @ResponseBody Log updateLog(@Valid Log existingLog) {
+	// 	Log teste = logRepository.findById(existingLog.getId()).get();
 		
-		return teste;
-	}
+	// 	return teste;
+	// }
 	
 	@GetMapping
 	public Iterable<Log> getLogs() {
