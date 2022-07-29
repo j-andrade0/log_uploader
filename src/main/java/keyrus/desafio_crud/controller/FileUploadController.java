@@ -21,6 +21,6 @@ public class FileUploadController {
 	@PostMapping
 	public String uploadFile(@RequestParam("file") MultipartFile file) throws IllegalStateException, IOException {
 		fileUploadService.uploadFile(file);
-		return "enviado";
+		return file.getOriginalFilename() + " enviado!";
 	}
 }
