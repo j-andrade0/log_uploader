@@ -18,14 +18,10 @@ import com.univocity.parsers.csv.CsvParserSettings;
 
 import keyrus.desafio_crud.model.entities.Log;
 import keyrus.desafio_crud.model.repositories.LogRepository;
-import keyrus.desafio_crud.service.FileUploadService;
 
 @RestController
 @RequestMapping("/file")
 public class FileUploadController {
-	
-	@Autowired
-	FileUploadService fileUploadService;
 	
 	@Autowired
 	LogRepository logRepository;
