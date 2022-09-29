@@ -5,13 +5,13 @@
     ou de forma automática (envia um arquivo, o sistema percorre todos os dados e os insere no banco).
     
 ## Documentação:
-     A documentação da API foi gerada com Swagger, com o projeto rodando, acesse: <ADICIONAR ENDPOINT>
+     A documentação da API foi gerada com Swagger, com o projeto rodando, acesse: http://localhost:8080/swagger-ui.html
  
 ## Testes:
      Os testes unitários foram feitos com JUnit, estão em: log_uploader/src/test/java/keyrus/desafio_crud/DesafioApplicationTests.java
  
  ## Popular banco por arquivo:
-     Acesse a página HTML localizada em: <ADICIONAR ENDPOINT> (log_uploader/src/main/resources/static/fileUpload.html), ou use algum programa para teste de APIS (Como Postman, por exemplo).
+     Acesse a página HTML localizada em: http://localhost:8080/fileUpload.html (log_uploader/src/main/resources/static/fileUpload.html), ou use algum programa para teste de APIS (Postman, por exemplo).
      Selecione o arquivo para ser enviado, e pronto! Os registros serão adicionados ao banco de dados.
      (O arquivo pré configurado para testes está localizado em: log_uploader/logFiles/logs.csv)
      
